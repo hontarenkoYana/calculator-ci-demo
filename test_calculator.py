@@ -17,6 +17,9 @@ class TestCalculator(unittest.TestCase):
 
     def test_subtraction(self):
         self.assertEqual(2, Calculator().subtract(4, 2))
+    
+    def test_multiplication(self):
+        self.assertEqual(8, Calculator().multiplication(4, 2))
 
     def test_hello(self):
         rv = self.app.get('/')

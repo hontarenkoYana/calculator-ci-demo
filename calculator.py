@@ -10,3 +10,7 @@ class Calculator:
     @staticmethod
     def subtract(first_term, second_term):
         return first_term - second_term
+    
+    @staticmethod
+    def multiplication(first_term, second_term):
+        return first_term * second_term
