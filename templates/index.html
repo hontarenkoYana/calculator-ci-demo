@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Demo</title>
+</head>
+<body>
+Addition
+<form action="/addition" method="post">
+  <input type="text" name="first_term"> 
+  <input type="text" name="second_term"> 
+  <input type="submit" value="+">
+</form>
+Subtraction
+<form action="/substraction" method="post">
+  <input type="text" name="first_term"> 
+  <input type="text" name="second_term"> 
+  <input type="submit" value="-">
+</form>
+Multiplication
+<form action="/multiplication" method="post">
+  <input type="text" name="first_term"> 
+  <input type="text" name="second_term"> 
+  <input type="submit" value="*">
+</form>
+
+{% if result %} RESULT: {{result}} {% endif %}
+</body>
+</html>
