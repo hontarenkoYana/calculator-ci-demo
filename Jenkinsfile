@@ -24,6 +24,9 @@ pipeline {
                       image 'hontikyana/calculator-app'
                       args '-p 5000:5000'} 
               }
+        steps {
+                sh 'echo "Hello"'
+            }
         }
     }
 }
