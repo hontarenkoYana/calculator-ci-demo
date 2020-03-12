@@ -21,12 +21,10 @@ pipeline {
         }
         stage('deploy') {
             agent {
-                docker {
-                      image 'hontikyana/calculator-app'
-                      args '-p 5000:5000'} 
+                docker { image 'hontikyana/calculator-app' } 
               }
-        steps {
-                sh 'echo "Hello"'
+             steps {
+                sh 'docker run -p 5000:5000 hontikyana/calculator-app'
             }
         }
     }
