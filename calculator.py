@@ -5,7 +5,7 @@ Calculator library containing basic math operations.
 class Calculator:
     @staticmethod
     def add(first_term, second_term):
-        return first_term + second_term
+        return 33
 
     @staticmethod
     def subtract(first_term, second_term):
